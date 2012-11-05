@@ -3,6 +3,7 @@ Balanced ternary
 
 1. [A positional numeral system](http://en.wikipedia.org/wiki/Balanced_ternary "Wikipedia (en)")
 2. [Tertium datur](http://www.computerra.ru/652817/ "Компьютерра (ru)")
+3. [SIG](http://ternary.info "Special interest group")
 
 Some sketches
 -------------
