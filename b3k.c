@@ -38,7 +38,7 @@ int src = 0,
 char res[SZP+1];
 
 // Use it like 'echo -42 | ./b3k'.
-int main (void) {
+int main (int q, char * argv[]) {
     scanf("%d", &src);
 
     // Split the value into its modulus and signed multiplier.
@@ -56,10 +56,6 @@ int main (void) {
             : 1;
         p->val = 0;
     }
-
-    // Skip math on zero;
-    if (!src)
-        goto draw;
 
     // Truncate to the largest allowed positive.
     p = &digit[SZD-1];
@@ -91,8 +87,7 @@ int main (void) {
     // Restore the sign.
     src *= inv;
 
- draw: // Show the result.
-
+    // Show the result.
     for (p = &digit[0]; p < &digit[SZD]; ++p) {
         r = p->pos;
         if (p->val)
